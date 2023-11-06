@@ -5,7 +5,7 @@
 	<title>Forward Fitness Club</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css">
-	<meta" name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"> 
@@ -15,19 +15,33 @@
 <body>
 
 	<div id="container">
+	
+		<!-- Mobile Nav -->
+		<nav class="mobile-nav"> 
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="about.html">About Us</a>
+				<a href="classes.html">Classes</a>
+				<a href="nutrition.html">Nutrition</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
 
 		<!-- Use the header area for the website name or logo -->
-		<header>
+		<header id="ffc-logo">
 			<a href="index.html"> <img src="images/forward-fitness-logo.png" alt="Forward Fitness Club logo" ></a>
 			
 		</header>
 		
-		<!-- Use the nav area to add hyperlinks to other pages within the website -->
-		<nav>
+		<!-- Tablet, Desktop Nav -->
+		<nav class="tablet-desktop">
 			<ul>
 				<li><a href="index.html">Home</a></li> 
 				<li><a href="about.html">About Us</a></li> 
-				<li><a href="classses.html">Classes</a></li> 
+				<li><a href="classes.html">Classes</a></li> 
 				<li><a href="nutrition.html">Nutrition</a></li> 
 				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
@@ -100,6 +114,8 @@
 		</footer>
 	
 	</div>
+	
+	<script src="scripts/script.js"></script> 
 	
 </body>
 </html>
